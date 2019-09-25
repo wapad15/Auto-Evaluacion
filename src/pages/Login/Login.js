@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import {Link } from 'react-router-dom'
-
+import './login.css'
 class Login extends Component {
 
-  render() { 
+    render() { 
+ 
     return ( 
       <div className="app-container app-theme-white body-tabs-shadow">
         <div className="app-container">
@@ -14,7 +15,8 @@ class Login extends Component {
                             <div className="slick-slider">
                                 <div>
                                     <div className="position-relative h-100 d-flex justify-content-center align-items-center bg-plum-plate" >
-                                            <div className="slide-img-bg">   </div>
+                                            <div className="slide-img-bg" >
+                                            </div>
                                             <div className="slider-content">
                                                 <h3>Titulo Para imagen</h3>
                                                 <p>texto para documentacion de la imagen</p>
@@ -47,7 +49,7 @@ class Login extends Component {
                     <div className="h-100 d-flex bg-white justify-content-center align-items-center col-md-12 col-lg-8">
                         <div className="mx-auto app-login-box col-sm-12 col-md-10 col-lg-9">
                                 <div className="conatiner">
-                                    <img  src ="assets/img/logo.jpeg" alt="UNAD"/> 
+                                    <img  src ="assets/img/logoGrande.jpeg" alt="UNAD"/> 
                             </div>
                             <h4 className="mb-0">
                                 <span className="d-block mt-4">Bienvenido</span>
@@ -82,7 +84,9 @@ class Login extends Component {
                                                 <Link to={'/'} className="btn-lg btn btn-link" >
                                                     Recuperar Contraseña
                                                 </Link>
-                                            <button className="btn btn-primary btn-lg ">Iniciar sesion</button>
+                                                <Link to={'/Visae'}  >
+                                                    <button className="btn btn-primary btn-lg ">Iniciar sesion</button>
+                                                </Link>
                                         </div>
                                     </div>
                                 </form>
