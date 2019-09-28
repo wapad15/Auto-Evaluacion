@@ -14,11 +14,11 @@ class Header extends Component {
                 <div className="app-header header-shadow">
                     <img className="logo-img" src="assets/img/logo.jpg" alt="LOGO" />
 
-                    <div class="header__pane ml-auto" >
+                    <div className="header__pane ml-auto" >
                         <div style={{ margin: '90px' }}>
-                            <button type="button" class="hamburger close-sidebar-btn hamburger--elastic " data-class="closed-sidebar">
-                                <span class="hamburger-box">
-                                    <span class="hamburger-inner"></span>
+                            <button type="button" className="hamburger close-sidebar-btn hamburger--elastic" data-classname="closed-sidebar">
+                                <span className="hamburger-box">
+                                    <span className="hamburger-inner"></span>
                                 </span>
                             </button>
                         </div>
@@ -29,11 +29,11 @@ class Header extends Component {
                             <div className="widget-content p-0">
                                 <div className="widget-content-wrapper">
                                     <div className="widget-content-left">
-                                        <Link data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                        <Link to={'#'} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="p-0 btn">
                                             <img width="42" className="rounded-circle" src="assets/images/avatars/1.jpg" alt="" />
                                            <FontAwesomeIcon icon={faAngleDown} />
                                         </Link>
-                                        <div tabindex="-1" role="menu" aria-hidden="true" className="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
+                                        <div tabIndex="-1" role="menu" aria-hidden="true" className="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
                                             <div className="dropdown-menu-header">
                                                 <div className="dropdown-menu-header-inner bg-info">
                                                     <div className="widget-content p-0">
@@ -61,7 +61,7 @@ class Header extends Component {
                                                         <li className="nav-item-header nav-item">INFORMACION
                                             </li>
                                                         <li className="nav-item">
-                                                            <Link href="#" className="nav-link">Recuperar Contraseña
+                                                            <Link to={'#'} className="nav-link">Recuperar Contraseña
                                                 </Link>
                                                         </li>
                                                     </ul>
@@ -70,8 +70,8 @@ class Header extends Component {
                                         </div>
                                     </div>
                                     <div className="widget-content-left  ml-3 header-user-info">
-                                        <div className="widget-heading">Arellys Correa</div>
-                                        <div className="widget-subheading">VISAE</div>
+                                        <div className="widget-heading">{this.props.nombre}</div>
+                                        <div className="widget-subheading">{this.props.rol}</div>
                                     </div>
                                 </div>
                             </div>

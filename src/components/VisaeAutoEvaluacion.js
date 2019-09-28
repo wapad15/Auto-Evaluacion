@@ -7,26 +7,36 @@ class  VisaeAutoEvaluacion extends Component {
   render() {
   return ( 
     <React.Fragment>
-      <Header />
-      <div class="app-main">
+      <Header
+        nombre='are correa'
+        rol= 'VISAE'
+      />
+      <div className="app-main">
       <MenuDesplegable />
-      <div class="app-main__outer">
-          <div class="app-main__inner">
-            <div class="row">
-              <div class=" col-lg-12 col-md-">
-                <div class="main-card mb-3 card">
-                  <div class="card-body">
-                    <h5 class="card-title">Iniciando nueva auto evaluacion</h5>
-                    <form  class="">
-                      <div class="position-relative form-group">
-                        <label for="exampleEmail" class="">Periodo</label>
-                        <input name="email" id="exampleEmail" placeholder="periodo" type="email" class="form-control" />
+      <div className="app-main__outer">
+          <div className="app-main__inner">
+            <div className="row">
+              <div className=" col-lg-12 col-md-6">
+                <div className="main-card mb-3 card">
+                  <div className="card-body">
+                    <h5 className="card-title">Iniciando nueva auto evaluacion</h5>
+                    <form  className="">
+                      <div className="position-relative form-group">
+                          <label htmlFor="exampleEmail2">Periodo</label>
+                          <select name="programa" className="form-control" >
+                            <option >16-01</option>
+                            <option >16-02</option>
+                            <option >08-03</option>
+                            <option >16-04</option>
+                            <option >08-05</option>
+                            <option >16-06</option>
+                          </select>
                       </div>
-                      <div class="position-relative form-group">
-                        <label for="examplePassword" class="">Nombre</label>
-                        <input name="password" id="examplePassword" placeholder="nombre" type="password" class="form-control" />
+                      <div className="position-relative form-group">
+                        <label htmlFor="examplePassword" className="">Nombre</label>
+                        <input name="password" id="examplePassword" placeholder="nombre" type="password" className="form-control" />
                       </div>
-                      <button class="mt-1 btn btn-primary">Iniciar</button>
+                      <button className="mt-1 btn btn-primary">Iniciar</button>
                     </form>
                   </div>
                 </div>

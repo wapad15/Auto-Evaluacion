@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Navegacion from '../../components/navegacion';
 import Header from '../../components/Header/Header';
 import MenuDesplegable from '../../components/MenuDesplegable';
 
@@ -23,8 +22,11 @@ class Visae extends Component {
     
     return (
       <React.Fragment>
-        <Header />
-        <div class="app-main">
+        <Header
+          nombre='are correa'
+          rol= 'VISAE'
+        />
+        <div className="app-main">
           <MenuDesplegable />
           </div>
       </React.Fragment>
