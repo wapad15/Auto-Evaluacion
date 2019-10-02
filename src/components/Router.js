@@ -6,6 +6,7 @@ import VisaeAutoEvaluacion from './VisaeAutoEvaluacion';
 import VisaeEncuesta from './VisaeEncuesta';
 import PreguntasInstrumentos from './PreguntasInstrumentos';
 import GrupoInteres from '../pages/estudiante/GrupoInteres';
+import ListarAutoE from './ListarAutoE';
 
 
 class Router extends Component {
@@ -22,7 +23,8 @@ class Router extends Component {
             <Route exact path="/Visae-autoE" component={VisaeAutoEvaluacion} />
             <Route exact path="/visae-instrumentos" component={VisaeEncuesta} />
             <Route exact path="/visae-preguntas" component={PreguntasInstrumentos} />
-            <Route exact path="/Grupo-interes" component={GrupoInteres} />
+            <Route exact path="/visae-listar" component={ListarAutoE} />
+            <Route exact path="/GrupoInteres" component={GrupoInteres} />
             <Route exact path="/visae-resultados" component={VisaeAutoEvaluacion} />
           </Switch>
 

@@ -3,6 +3,17 @@ import Header from '../../components/Header/Header'
 
 class GrupoInteres extends Component {
 
+  cargarEncuesta = (e) => {
+    e.preventDefault();
+    console.log('diste click')
+    return (
+      <React.Fragment>
+        <h1>cargar encuesta</h1>
+      </React.Fragment>
+    )
+}
+
+
   render() {
     return (
       <React.Fragment>
@@ -18,7 +29,7 @@ class GrupoInteres extends Component {
                   <div className="main-card mb-13 card">
                     <div className="card-body ">
                       <h5 className="card-title justify-content-center align-items-center" >Actividades</h5>
-                      <button
+                      <button onClick={this.cargarEncuesta}
                         className="mb-6 mr-6 btn-pill btn btn-primary btn-lg btn-block">
                           Iniciar Encuesta
                       </button>

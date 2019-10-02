@@ -16,7 +16,7 @@ class Header extends Component {
 
                     <div className="header__pane ml-auto" >
                         <div style={{ margin: '90px' }}>
-                            <button type="button" className="hamburger close-sidebar-btn hamburger--elastic" data-classname="closed-sidebar">
+                            <button type="button" className="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
                                 <span className="hamburger-box">
                                     <span className="hamburger-inner"></span>
                                 </span>
@@ -29,10 +29,13 @@ class Header extends Component {
                             <div className="widget-content p-0">
                                 <div className="widget-content-wrapper">
                                     <div className="widget-content-left">
-                                        <Link to={'#'} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="p-0 btn">
+                                        <div className="btn-group">
+                                            <Link to={'#'} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="p-0 btn">
                                             <img width="42" className="rounded-circle" src="assets/images/avatars/1.jpg" alt="" />
                                            <FontAwesomeIcon icon={faAngleDown} />
-                                        </Link>
+                                            </Link>
+                                            
+                                        </div>
                                         <div tabIndex="-1" role="menu" aria-hidden="true" className="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
                                             <div className="dropdown-menu-header">
                                                 <div className="dropdown-menu-header-inner bg-info">

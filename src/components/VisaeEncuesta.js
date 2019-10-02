@@ -17,7 +17,7 @@ const VisaeEncuesta = () => {
               <div id="headingOne" className="card-header">
                 <span className="form-heading">Construccion de Encuentas</span>
               </div>
-              <div data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne" className="collapse show">
+              
                 <div className="card-body">
                   <form>
                     <div className="form-row">
@@ -72,7 +72,7 @@ const VisaeEncuesta = () => {
                     <button className="mt-1 btn btn-primary">enviar</button>
                   </form>
                 </div>
-              </div>
+              
             </div>
           </div>
         </div>

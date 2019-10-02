@@ -4,6 +4,7 @@ const MenuDesplegable = () => {
   return ( 
    
         <div className="app-sidebar sidebar-shadow">
+            
                 <div className="scrollbar-sidebar ps ps--active-y">
                     <div className="app-sidebar__inner">
                         <ul className="vertical-nav-menu metismenu">
@@ -21,24 +22,14 @@ const MenuDesplegable = () => {
                                             </i>Crear
                                         </Link>
                                     </li>
+                                    
                                     <li>
-                                        <Link to={'#'}>
-                                            <i className="metismenu-icon">
-                                            </i>Eliminar
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to={'#'}>
+                                        <Link to={'Visae-listar'}>
                                             <i className="metismenu-icon">
                                             </i>Listar
                                         </Link>
                                   </li>
-                                  <li>
-                                        <Link to={'#'}>
-                                            <i className="metismenu-icon"></i>
-                                            Editar
-                                        </Link>
-                                    </li>
+                                 
                                     <li>
                                         <Link to={'#'}>
                                             <i className="metismenu-icon"></i>
@@ -72,7 +63,7 @@ const MenuDesplegable = () => {
                                   <li>
                                         <Link to={'#'}>
                                             <i className="metismenu-icon"></i>
-                                            Preguntas
+                                            Encuestas
                                             <i className="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                         </Link>
                                         <ul className="mm-collapse">
@@ -223,7 +214,13 @@ const MenuDesplegable = () => {
                             
                         </ul>
                     </div>
-                <div className="ps__rail-x" style={{left: '0px', bottom: '0px'}}><div className="ps__thumb-x" tabIndex="0" style={{left: '0px', bottom: '0px'}}></div></div><div className="ps__rail-y" style={{top: '0px', height: '555px', right: '0px'}}><div className="ps__thumb-y" tabIndex="0" style={{top: '0px', height: '304px'}}></div></div></div>
+              <div className="ps__rail-x" style={{ left: '0px', bottom: '0px' }}>
+                  <div className="ps__thumb-x" tabIndex="0" style={{ left: '0px', bottom: '0px' }}></div>
+              </div>
+              <div className="ps__rail-y" style={{ top: '0px', height: '555px', right: '0px' }}>
+                  <div className="ps__thumb-y" tabIndex="0" style={{ top: '0px', height: '304px' }}></div>
+              </div>
+          </div>
             </div>
    
    );
