@@ -43,12 +43,12 @@ class Header extends Component {
                                                         <div className="widget-content-wrapper">
                                                             <div className="widget-content-left">
                                                                 <div className="widget-heading">Arellys Correas</div>
-                                                                <div className="widget-subheading opacity-8">ROL</div>
+                                                                <div className="widget-subheading  opacity-8">ROL</div>
                                                             </div>
                                                             <div className="widget-content-right mr-2">
                                                                 <Link to={'/'}>
                                                                     <button
-                                                                        className="btn-pill btn-shadow btn-shine btn btn-focus">Salir
+                                                                        className="unad btn-pill btn-shadow btn-shine btn btn-focus">Salir
                                                                 </button>
                                                                 </Link>
                                                             </div>
